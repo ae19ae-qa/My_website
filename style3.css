@@ -1,0 +1,21 @@
+.spravka {
+    table-layout: fixed;
+    width: 90%;
+    white-space: nowrap;
+    
+}
+.spravka td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
+.row-t1 {
+    width: 30%;
+}
+.row-t2 {
+    width: 30%;
+}
+.row-t3 {
+    width: 30%;
+}
