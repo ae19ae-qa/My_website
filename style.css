@@ -1,0 +1,165 @@
+/* стиль к элементам body: СЕЛЕКТОР body, СВОЙСТВА: цвет color: ЗНАЧЕНИЕ  purple  */ 
+/*  padding-left:для сдвига текста , 
+    font-family:шрифты в тексте, 
+    color:цвет текста, 
+    background-color:цвет фона */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #fcfbfc;
+    background: linear-gradient(132deg, #f113d4, #072f9e, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+    margin:0px;
+}
+  
+/* стили  меню в списке ul */
+/* list-style-type: убираем точки по умолчанию перед строками в списке
+    padding: убираем отступ по умолчанию от левого края
+    margin: убираем отступ по умолчанию сверху
+    position: для сдвига меню ('position: absolute' говорит, что элемент ul расположен независимо от любого текста который предшествовал или будет следующим за этим элементом)
+    top: для сдвига меню сверху
+    left: для сдвига меню слева
+    width: 
+*/
+  ul.navbar {
+    list-style-type: none;
+    padding: 1em;
+    margin: 1em;
+    position: absolute;
+    top: 1em;
+    left: 0.1em;
+    width: 9em 
+  }
+
+  /* font-family:шрифты в заголовке
+  */ 
+      h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif;
+  }
+
+/* устанавливаем поля ссылок 
+    background: цвет фона поля
+    margin: устанавливаем отступы поля слева
+    padding: устанавливаем отступы поля сверху
+    border-right: черта справа
+*/
+  ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid black;
+  }
+
+/* убираем подчеркивание текста ссылки */
+  ul.navbar a {
+    text-decoration: none; 
+  }
+  
+ /* устанавливаем цвета ссылок, для тех которые еще не смотрели и тех, что посмотрели и цвет и жирность при наведении на ссылку*/
+    a:link {
+      color: blue; 
+    }
+    a:visited {
+      color: purple; 
+    }
+    a:hover {
+      color: rgba(62, 224, 56, 0.938);
+      font-weight: 800;
+    }
+   
+/*  используем свойства
+    border-top: для того чтобы добавить прерывистую линию над элементом <address>
+    margin-top: отступ элемента слева от края
+    padding-top: отступ элемента сверху от черты
+     */
+  address {
+    border-top: thin dotted;
+    margin-top: 1em;
+    padding-top: 1em;
+     }
+/*контейнер с анимацией 
+    width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: mymove 5s infinite;
+        animation-timing-function: определяет кривую скорости анимации
+        linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
+         */ 
+     div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position:relative;
+        animation: mymove 30s infinite;
+        animation-timing-function: linear;
+      }
+      
+      @keyframes mymove {
+        from {left: 150px;}
+        to {left: 1500px;}
+      }
+      @keyframes Gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+/* текст, заголовки и кнопки в body -  центрирование */
+.header-content {
+    margin-top:10%;
+    text-align: center;
+    color:  #EFEEF5;
+  }
+  .header-content h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 1px;
+  }
+  .header-content p {
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 20px auto;
+  }
+.header-content button {
+    width: 140px;
+    margin:20px 10px;
+    color: #591BC5;
+    font-size: 17px;
+    border:1px solid #EFEEF5;
+    font-weight: 500;
+    background: #EFEEF5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor:pointer;
+    transition: .3s;
+  }
+  .header-content button:hover {
+    border-radius: 0;
+  }
+  .btn {
+    width: 140px;
+    margin:20px 10px;
+    color: #591BC5;
+    font-size: 17px;
+    border:1px solid #EFEEF5;
+    font-weight: 500;
+    background: #EFEEF5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor:pointer;
+    transition: .3s;
+    text-decoration: none;
+   }
